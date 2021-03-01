@@ -12,7 +12,7 @@ It's important to init() all o' objects after declare and define.
 
 ##### output:
 ```html
-<div class="container, section" id="first_section">
+<div class="container section" id="first_section">
     <h1 class="seciont__header">Header1</h1>
     <p class="section__paragraph">Hello world!</p>
 </div>
