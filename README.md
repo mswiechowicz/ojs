@@ -53,4 +53,4 @@ Ouput code would looks:
 </div>
 ```
 Value in the store object will be replaced everytime when input value changes   
-This is very cool things when we want to asynchronously send a couple of data. We don't need to get values from every fields, just send the store object. 
+This is very cool thing when we want to asynchronously send a couple of data. We don't need to get values from every fields, just send the store object. 
