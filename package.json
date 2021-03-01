@@ -1,0 +1,24 @@
+{
+  "name": "ojs",
+  "version": "1.0.0",
+  "description": "Javascript library for fast object generate html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mswiechowicz/ojs.git"
+  },
+  "keywords": [
+    "object",
+    "js",
+    "ojs"
+  ],
+  "author": "Maciek Świechowicz and Kacper Stodolak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mswiechowicz/ojs/issues"
+  },
+  "homepage": "https://github.com/mswiechowicz/ojs#readme"
+}
