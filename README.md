@@ -1,7 +1,7 @@
 # ojs
-####Open source javascript library
-####Quick start
-#####input:
+Open source javascript library
+#### Quick start
+##### input:
 ```javascript
 o('div').class(['container', 'section']).id('first_section').add([
     o('h1').class('section__header').text('Header 1').init(),
@@ -10,7 +10,7 @@ o('div').class(['container', 'section']).id('first_section').add([
 ```
 It's important to init() all o' objects after declare and define.
 
-#####output:
+##### output:
 ```html
 <div class="container, section" id="first_section">
     <h1 class="seciont__header">Header1</h1>
@@ -18,7 +18,7 @@ It's important to init() all o' objects after declare and define.
 </div>
 ```
 
-####Our library has a couple of object oriented elements of html like Input
+#### Our library has a couple of object oriented elements of html like Input
 It's simple to use them. They works great with javascript objects with data;
 ```javascript
 const store = {
