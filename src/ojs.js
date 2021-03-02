@@ -30,6 +30,11 @@ o.prototype.click = function(cb) {
     return this;
 };
 
+o.prototype.setAttribute = function (name, val){
+    this.element.setAttribute(name, val);
+    return this;
+}
+
 o.prototype.attr = function(attrs) {
     if (attrs instanceof Array) {
         attrs.forEach(attr => this.element.setAttribute(attr.name, attr.val));
@@ -58,9 +63,16 @@ o.prototype.add = function(children) {
         try {
             this.element.appendChild(child);
         }catch (err) {
-            // console.warn(err);
+            console.warn(err);
         }
     });
+    return this;
+};
+
+o.prototype.for = function (id){
+    if (this.element.nodeName === 'label'){
+        this.element.setAttribute('for', 'id');
+    }
     return this;
 };
 
@@ -77,30 +89,8 @@ o.prototype.html = function(html) {
     }
     return this;
 };
-o.prototype.translatedText = function(text, translatedFromKey) { //NOTE: IMPORTANT! works only with LibrariesTranslator class
-    if (translatedFromKey === 'boolean') {
-        const value = text == 0 ? 'NIE' : 'TAK';
-        return this.text(value);
-    }
-
-    if (!translatedFromKey || typeof translatedFromKey !== 'string') {
-        return this.text(text);
-    }
-
-    this.element.setAttribute('toTranslate', translatedFromKey);
-    return this.text(text);
-};
 
 o.prototype.init = function() {
     return this.element;
 };
-
-o.prototype.push = function() {
-    return this.element;
-};
-
-o.prototype.logger = function() {
-    // console.log(this.element)
-};
-
 export default o;
