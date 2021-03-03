@@ -118,10 +118,11 @@ class Input {
             .class([ 'text-warning', 'hidden' ]);
         this.input
             .id(this.idDOM)
-            .class('input')
+            .class('input__field')
             .event(this.event);
         this.labelEl
             .for(this.idDOM)
+            .class('input__label')
             .attr([
                 {
                     name: 'type',

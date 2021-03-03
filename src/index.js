@@ -1,8 +1,9 @@
-import Input from "./components/Input.js";
+import Input from "./ojs/components/Input.js";
+import o from "./ojs/ojs.js";
 
 const exampleDb = {
-    example: 'siema'
-}
+    example: 'test'
+};
 const input = new Input({
     label: 'test',
     name: 'example',
@@ -10,4 +11,9 @@ const input = new Input({
     type: 'text'
 });
 
-document.body.appendChild(input.init());
+
+document.body.appendChild(
+    o('div').setAttribute('style', 'width: 50%').add([
+        input.init()
+    ]).init()
+);
