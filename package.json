@@ -2,9 +2,12 @@
   "name": "ojs",
   "version": "1.0.0",
   "description": "Javascript library for fast object generate html",
-  "main": "index.js",
+  "author": "Maciek Świechowicz and Kacper Stodolak",
+  "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --config ./webpack-config/webpack.config.js && webpack serve --config ./webpack-config/webpack.config.js",
+    "prod": "webpack --config ./webpack-config/webpack.config.prod.js",
+    "dev": "webpack --config ./config/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -15,10 +18,28 @@
     "js",
     "ojs"
   ],
-  "author": "Maciek Świechowicz and Kacper Stodolak",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/mswiechowicz/ojs/issues"
   },
-  "homepage": "https://github.com/mswiechowicz/ojs#readme"
+  "homepage": "https://github.com/mswiechowicz/ojs#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-typescript": "^7.13.0",
+    "babel-loader": "^8.2.2",
+    "core-js": "^2.6.5",
+    "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.5.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^9.1.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
 }
