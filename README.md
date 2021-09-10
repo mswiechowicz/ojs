@@ -1,3 +1,6 @@
+# THIS ONE DEPRECATED
+Actual -> https://github.com/OrangutanJS/ojs-store
+
 # ojs
 Open source JavaScript library for creating Object-oriented Web user interfaces. Quick and easy :) 
 #### Quick start
